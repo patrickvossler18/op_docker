@@ -1,5 +1,5 @@
 # FROM defines the base image
-FROM gcr.io/tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:latest-gpu
 MAINTAINER Jihong Ju <daniel.jihong.ju@gmail.com>
 
 # Disable interactive interface
