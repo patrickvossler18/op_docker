@@ -16,9 +16,9 @@ RUN apt-get update && apt-get install -y \
     python-virtualenv \
     graphviz
 
-ADD requirements.txt
+ADD requirements.txt /tmp/
 
-RUN pip install -r requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 # Set keras backend to tensorflow by default
 ENV KERAS_BACKEND tensorflow
